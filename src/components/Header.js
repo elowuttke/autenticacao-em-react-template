@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { navigateToHome, navigateToLogin, navigateToCrate } from "../routes/coordinator";
+import { navigateToHome, navigateToLogin, navigateToCreate } from "../routes/coordinator";
 import { HeaderContainer, GoToPage, Title } from "./styleHeader";
 
 function Header() {
@@ -11,7 +11,7 @@ function Header() {
       <GoToPage onClick={() => navigateToHome(navigate)}>
         Ir para página inicial
       </GoToPage>
-      <GoToPage onClick={() => navigateToCrate(navigate)}>
+      <GoToPage onClick={() => navigateToCreate(navigate)}>
         Criar Viagem
       </GoToPage>
       <GoToPage onClick={() => navigateToLogin(navigate)}>
