@@ -6,7 +6,7 @@ import { CardContainer, DivText, DivTitle, Text } from "./styleCard";
 
 function Card({ trip }) {
   const navigate = useNavigate();
-  console.log(trip)
+  // console.log(trip)
 
   return (
     <CardContainer onClick={() => navigateToAdmin(navigate, trip.id)}>
